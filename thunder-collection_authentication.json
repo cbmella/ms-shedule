@@ -1,0 +1,299 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "authentication",
+    "collectionId": "da77d97d-110c-4c18-a39d-b333f0c9cb6f",
+    "dateExported": "2024-09-12T13:30:05.102Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "06d7db68-dd3b-4a39-a688-33c232984368",
+            "colId": "da77d97d-110c-4c18-a39d-b333f0c9cb6f",
+            "containerId": "",
+            "name": "/auth/login",
+            "url": "http://localhost/authentication/public/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-05-27T16:31:08.044Z",
+            "modified": "2024-05-27T18:56:44.014Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "name": "Accept",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "user@example.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "password"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "5ecc770f-7164-4a2e-9e4e-a2f170b3ce5a",
+            "colId": "da77d97d-110c-4c18-a39d-b333f0c9cb6f",
+            "containerId": "",
+            "name": "/auth/register",
+            "url": "http://localhost/authentication/public/auth/register",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2024-09-09T11:58:37.515Z",
+            "modified": "2024-09-10T12:25:40.300Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded"
+                },
+                {
+                    "name": "Accept",
+                    "value": "application/x-www-form-urlencoded"
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "doctor falso"
+                    },
+                    {
+                        "name": "password",
+                        "value": "password"
+                    },
+                    {
+                        "name": "password_confirmation",
+                        "value": "password"
+                    },
+                    {
+                        "name": "email",
+                        "value": "doctorfalso@example.com"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "24c26d3f-5820-4740-8288-31c89ab07ce8",
+            "colId": "da77d97d-110c-4c18-a39d-b333f0c9cb6f",
+            "containerId": "",
+            "name": "/auth/me",
+            "url": "http://localhost/authentication/public/auth/me",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-05-27T16:31:08.045Z",
+            "modified": "2024-09-10T12:26:39.967Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2F1dGhlbnRpY2F0aW9uL3B1YmxpYy9hdXRoL3JlZ2lzdGVyIiwiaWF0IjoxNzI1OTcxMTM5LCJleHAiOjE3MjU5NzQ3MzksIm5iZiI6MTcyNTk3MTEzOSwianRpIjoiQ3JwTm8xTmNyWnliMm9YMyIsInN1YiI6IjEiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.umfGwtPuhxBIiVXcaLwU73XsvWm9aCeiGsYlTaX3veo"
+            }
+        },
+        {
+            "_id": "ff70eaf7-e34f-460d-83e2-c1594b356387",
+            "colId": "da77d97d-110c-4c18-a39d-b333f0c9cb6f",
+            "containerId": "",
+            "name": "/auth/logout",
+            "url": "http://localhost/authentication/public/auth/logout",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-05-27T16:31:08.046Z",
+            "modified": "2024-09-09T18:33:42.335Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Accept",
+                    "value": "application/x-www-form-urlencoded",
+                    "isDisabled": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2F1dGhlbnRpY2F0aW9uL3B1YmxpYy9hdXRoL2xvZ2luIiwiaWF0IjoxNzI1OTA2ODA4LCJleHAiOjE3MjU5MTA0MDgsIm5iZiI6MTcyNTkwNjgwOCwianRpIjoiTHhjWFl1bzJhTkk3RFJmZCIsInN1YiI6IjEyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.Z60SKVNUrLWmf1aYllC1zvkdlZx7dnB-E-mG_uyUWF8"
+            }
+        },
+        {
+            "_id": "e0f91800-1251-42ae-a91f-584bdce7dac9",
+            "colId": "da77d97d-110c-4c18-a39d-b333f0c9cb6f",
+            "containerId": "",
+            "name": "/auth/test-token-ttl",
+            "url": "http://localhost/authentication/public/auth/test-token-ttl",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-05-27T17:45:36.633Z",
+            "modified": "2024-09-09T13:02:07.327Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2F1dGhlbnRpY2F0aW9uL3B1YmxpYy9hdXRoL2xvZ2luIiwiaWF0IjoxNzI1ODg1MTU1LCJleHAiOjE3MjU4ODg3NTUsIm5iZiI6MTcyNTg4NTE1NSwianRpIjoiMnhqVUdtQ1lRWklFUmJxSiIsInN1YiI6IjMiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.ke5mh6NS57QQD166FKrjdpkk4t2nxlBEMbpM-JtXPhQ"
+            }
+        },
+        {
+            "_id": "ad9b0098-69ef-45d7-bd01-12e5bf542f0d",
+            "colId": "da77d97d-110c-4c18-a39d-b333f0c9cb6f",
+            "containerId": "",
+            "name": "/auth/refresh",
+            "url": "http://localhost/authentication/public/auth/refresh?refresh_token=agJtJrVC7INfUYG07Ht9CidBPUinCdiimAGyx5Qu6GWnB93TihZ5XllqXwCi",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-05-27T16:31:08.047Z",
+            "modified": "2024-09-09T12:33:53.417Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Accept",
+                    "value": "application/x-www-form-urlencoded",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "refresh_token",
+                    "value": "agJtJrVC7INfUYG07Ht9CidBPUinCdiimAGyx5Qu6GWnB93TihZ5XllqXwCi",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "agJtJrVC7INfUYG07Ht9CidBPUinCdiimAGyx5Qu6GWnB93TihZ5XllqXwCi"
+            }
+        },
+        {
+            "_id": "98e4e22f-5d19-437e-b8eb-fba8fc28c8aa",
+            "colId": "da77d97d-110c-4c18-a39d-b333f0c9cb6f",
+            "containerId": "",
+            "name": "/auth/validate-token",
+            "url": "http://localhost/authentication/public/auth/validate-token",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-05-27T16:31:08.048Z",
+            "modified": "2024-09-09T18:20:11.012Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Accept",
+                    "value": "application/x-www-form-urlencoded",
+                    "isDisabled": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2F1dGhlbnRpY2F0aW9uL3B1YmxpYy9hdXRoL2xvZ2luIiwiaWF0IjoxNzI1OTA1OTkzLCJleHAiOjE3MjU5MDk1OTMsIm5iZiI6MTcyNTkwNTk5MywianRpIjoiekt5S1FsM1BSR3RER3ppZCIsInN1YiI6IjEyIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.RqricNaed4anvEYbZJbd7TNXyzvukv6gx0GdYy8o8NM"
+            }
+        },
+        {
+            "_id": "8dbf0ddb-becd-4039-8734-9624e7ad18b5",
+            "colId": "da77d97d-110c-4c18-a39d-b333f0c9cb6f",
+            "containerId": "",
+            "name": "/auth/token-life",
+            "url": "http://localhost/authentication/public/auth/token-life",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-09-09T13:13:38.143Z",
+            "modified": "2024-09-09T13:14:16.850Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Accept",
+                    "value": "application/x-www-form-urlencoded",
+                    "isDisabled": true
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vbG9jYWxob3N0L2F1dGhlbnRpY2F0aW9uL3B1YmxpYy9hdXRoL3JlZnJlc2giLCJpYXQiOjE3MjU4ODYzODUsImV4cCI6MTcyNTg4OTk4NSwibmJmIjoxNzI1ODg2Mzg1LCJqdGkiOiJFV05GM3dnV3NsQXFtVk9nIiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.fnB0RFgCO2TNgtTIgsiPdUHgad9hHy8JfWjklogw7SQ"
+            }
+        },
+        {
+            "_id": "c988291f-de5b-4597-8bfd-4e524d103200",
+            "colId": "da77d97d-110c-4c18-a39d-b333f0c9cb6f",
+            "containerId": "",
+            "name": "/professionals/{id}",
+            "url": "http://localhost/authentication/public/users/role/professional/id/1",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-09-10T12:07:12.721Z",
+            "modified": "2024-09-12T13:14:29.264Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Accept",
+                    "value": "application/x-www-form-urlencoded",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "852f1143-8f83-4e73-bbb6-e41ca57a7ec3",
+            "colId": "da77d97d-110c-4c18-a39d-b333f0c9cb6f",
+            "containerId": "",
+            "name": "/professionals/{id} Copy",
+            "url": "http://localhost:12000/users/role/professional/id/1",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-09-12T13:17:15.503Z",
+            "modified": "2024-09-12T13:18:21.121Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/x-www-form-urlencoded",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Accept",
+                    "value": "application/x-www-form-urlencoded",
+                    "isDisabled": true
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "http://localhost:9004"
+        }
+    },
+    "ref": "FvAgoggY8_Df7JS80wwr_RGwqTbowkJZnB-eT3h0vV3MtOKpEBv2dLIX56rl9IFmOsFHVoDMcKu8OiM-5Qw-9g"
+}

@@ -1,0 +1,17 @@
+version: "3"
+services:
+  app:
+    container_name: ms-shedule
+    build: .
+    image: cbm3lla/api-lumen-ms-shedule-dev:1.0 # Etiqueta de la imagen
+    volumes:
+      - ../.ms-shedule:/var/www/html/.env
+      - .:/var/www/html
+      - vendor:/var/www/html/vendor
+    ports:
+      - "12001:80"
+    restart: always
+
+volumes:
+  vendor:
+    driver: local
